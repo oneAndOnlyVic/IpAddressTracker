@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style/style.css">
+ 
+    <!-- leaflet stuff -->
+
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.8.0/dist/leaflet.css"
+    integrity="sha512-hoalWLoI8r4UszCkZ5kL8vayOGVae1oxXe/2A4AO6J9+580uKHDO3JdHb7NzwwzK5xr/Fs0W40kiNHxM9vyTtQ=="
+    crossorigin=""/>
+    <!-- Make sure you put this AFTER Leaflet's CSS -->
+    <script src="https://unpkg.com/leaflet@1.8.0/dist/leaflet.js"
+    integrity="sha512-BB3hKbKWOc9Ez/TAwyWxNXeoV9c1v6FIeYiBieIWkpLjauysF18NzgR1MBNBXf8/KABdlkX68nAhlwcDFLGPCQ=="
+    crossorigin=""></script>
+
+
+    <title>IP Address Tracker</title>
+</head>
+<body>
+   <div class="top">
+
+    <h1>IP Address Tracker</h1>
+     <div class="in-btn" >
+        <input type="text" id="search-bar" placeholder="search for any ip address or location">
+        <button onclick="getIp()"></button>
+     </div>
+
+     <div class="info-box">
+         <section class="info">
+             <h2 class="info-heading">IP ADDRESS</h2>
+             <p class="ipAddress">192.212.174.101</p>
+             <div class="vr"></div>
+         </section>
+         <section class="info">
+            <h2 class="info-heading">LOCATION</h2>
+            <p class="location">Brooklyn, NY 10001</p>
+            <div class="vr"></div>
+        </section>
+        <section class="info">
+            <h2 class="info-heading">TIMEZONE</h2>
+            <p class="timezone">UTC -05:00</p>
+            <div class="vr"></div>
+        </section>
+        <section class="info">
+            <h2 class="info-heading">ISP</h2>
+            <p class="isp">SpaceX Starlink</p>
+            
+        </section>
+     </div>
+   </div>
+    <div  id="map" class="map">
+
+    </div>
+
+    <script src="app.js">
+        
+    </script>
+</body>
+</html>

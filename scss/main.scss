@@ -1,0 +1,242 @@
+
+$VeryDarkGray: hsl(0, 0%, 17%);
+$DarkGray: hsl(0, 0%, 59%);
+
+
+@media (min-width : 500px){
+
+
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+body{
+
+    font-family: cursive;
+
+    height: 100vh;
+    .top{
+        background: no-repeat center center/cover url("/images/pattern-bg.png");
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 30%;
+        
+        
+    
+        h1{
+            font-size: 18px;
+            color: white;
+            margin: 0.5rem;
+            position: relative;
+            top:10%;
+        }
+    
+        .in-btn{
+            display: flex;
+            width: 100%;
+            justify-content: center;
+            position: relative;
+            top:10%;
+            input{
+             width: 20%;
+             padding: 0.5rem;
+             border: 1px solid white;
+             border-radius: 8px 0px 0px 8px;
+            }
+            
+            button{
+             
+             padding: 0.5rem;
+             border: 1px solid white;
+             border-radius: 0px 8px 8px 0px;
+             background: no-repeat center center $VeryDarkGray url('/images/icon-arrow.svg');
+             width: 3%;
+             &:hover{
+                 background-color: $DarkGray;
+             }
+            }
+        }
+    
+        .info-box{
+            display: flex;
+            
+            margin: 0 1rem;
+            background-color: white;
+            padding:1.5rem 1.5rem;
+            border: 1px solid white;
+             border-radius: 10px 10px 10px 10px;
+
+             position: relative;
+             top: 30%;
+
+             box-shadow: 1px 1px 20px gray;
+             z-index: 10;
+             
+             
+             
+             
+            .info{
+                padding: 0.2rem;
+                margin: 00.5rem;
+                position: relative;
+                .info-heading{
+                    font-size: 10px;
+                    margin: 0.5rem 0rem;
+                    color: $DarkGray;
+                }
+                p{
+                    font-weight: 900;
+                }
+                .vr{
+                    height: 100%;
+                    width: 1px;
+                    background-color: $DarkGray;
+                    position: absolute;
+                    top: 0px;
+                    right: -4px;
+                   
+                    
+
+
+                }
+         
+
+            }
+           
+        }
+    }
+}
+
+#map{
+
+
+    height: 70%;
+    width: 100%;
+    position: relative;
+    z-index: 1;
+}
+
+
+}
+
+
+@media (max-width : 499px){
+    *{
+        margin: 0px;
+        padding: 0px;
+    }
+    
+    body{
+    
+        font-family: cursive;
+    
+        height: 100vh;
+        .top{
+            background: no-repeat center center/cover url("/images/pattern-bg.png");
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 40%;
+            
+            
+        
+            h1{
+                font-size: 18px;
+                color: white;
+                margin: 0.5rem;
+                position: relative;
+                top: 20%;
+            }
+        
+            .in-btn{
+                display: flex;
+                width: 100%;
+                justify-content: center;
+                position: relative;
+                top: 20%;
+                input{
+                 width: 70%;
+                 padding: 0.5rem;
+                 border: 1px solid white;
+                 border-radius: 8px 0px 0px 8px;
+                }
+                
+                button{
+                 
+                 padding: 0.5rem;
+                 border: 1px solid white;
+                 border-radius: 0px 8px 8px 0px;
+                 width: 10%;
+                 background: no-repeat center center $VeryDarkGray url('/images/icon-arrow.svg');
+                  
+                 &:hover{
+                     background-color: $DarkGray;
+                 }
+                }
+            }
+        
+            .info-box{
+                display: flex;
+                flex-direction: column;
+                margin: 0 1rem;
+                background-color: white;
+                padding: 0.1rem 1.5rem;
+                border: 1px solid white;
+                border-radius: 10px 10px 10px 10px;
+    
+                 position: relative;
+                 top: 30%;
+    
+                 box-shadow: 1px 1px 20px gray;
+                 z-index: 3;
+                 
+                 
+                 text-align: center;
+                 width: 80%;
+                 
+                .info{
+                    padding: 0 0.2rem;
+                    margin: 00.5rem;
+                    position: relative;
+                    .info-heading{
+                        font-size: 10px;
+                        margin: 0.2rem 0rem;
+                        color: $DarkGray;
+                    }
+                    p{
+                        font-weight: 900;
+                    }
+                    .vr{
+                        height: 100%;
+                        width: 1px;
+                        background-color: $DarkGray;
+                        position: absolute;
+                        top: 0px;
+                        right: -4px;
+                        display: none;
+                    }
+             
+    
+                }
+               
+            }
+        }
+    }
+    
+    #map{
+    
+    
+        height: 70%;
+        width: 100%;
+        position: relative;
+        z-index: 1;
+       
+    }
+
+    
+}

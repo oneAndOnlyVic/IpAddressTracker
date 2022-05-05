@@ -1,0 +1,184 @@
+@media (min-width: 500px) {
+  * {
+    margin: 0px;
+    padding: 0px;
+  }
+
+  body {
+    font-family: cursive;
+    height: 100vh;
+  }
+  body .top {
+    background: no-repeat center center/cover url("/images/pattern-bg.png");
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 30%;
+  }
+  body .top h1 {
+    font-size: 18px;
+    color: white;
+    margin: 0.5rem;
+    position: relative;
+    top: 10%;
+  }
+  body .top .in-btn {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    position: relative;
+    top: 10%;
+  }
+  body .top .in-btn input {
+    width: 20%;
+    padding: 0.5rem;
+    border: 1px solid white;
+    border-radius: 8px 0px 0px 8px;
+  }
+  body .top .in-btn button {
+    padding: 0.5rem;
+    border: 1px solid white;
+    border-radius: 0px 8px 8px 0px;
+    background: no-repeat center center hsl(0deg, 0%, 17%) url("/images/icon-arrow.svg");
+    width: 3%;
+  }
+  body .top .in-btn button:hover {
+    background-color: hsl(0deg, 0%, 59%);
+  }
+  body .top .info-box {
+    display: flex;
+    margin: 0 1rem;
+    background-color: white;
+    padding: 1.5rem 1.5rem;
+    border: 1px solid white;
+    border-radius: 10px 10px 10px 10px;
+    position: relative;
+    top: 30%;
+    box-shadow: 1px 1px 20px gray;
+    z-index: 10;
+  }
+  body .top .info-box .info {
+    padding: 0.2rem;
+    margin: 0.5rem;
+    position: relative;
+  }
+  body .top .info-box .info .info-heading {
+    font-size: 10px;
+    margin: 0.5rem 0rem;
+    color: hsl(0deg, 0%, 59%);
+  }
+  body .top .info-box .info p {
+    font-weight: 900;
+  }
+  body .top .info-box .info .vr {
+    height: 100%;
+    width: 1px;
+    background-color: hsl(0deg, 0%, 59%);
+    position: absolute;
+    top: 0px;
+    right: -4px;
+  }
+
+  #map {
+    height: 70%;
+    width: 100%;
+    position: relative;
+    z-index: 1;
+  }
+}
+@media (max-width: 499px) {
+  * {
+    margin: 0px;
+    padding: 0px;
+  }
+
+  body {
+    font-family: cursive;
+    height: 100vh;
+  }
+  body .top {
+    background: no-repeat center center/cover url("/images/pattern-bg.png");
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 40%;
+  }
+  body .top h1 {
+    font-size: 18px;
+    color: white;
+    margin: 0.5rem;
+    position: relative;
+    top: 20%;
+  }
+  body .top .in-btn {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    position: relative;
+    top: 20%;
+  }
+  body .top .in-btn input {
+    width: 70%;
+    padding: 0.5rem;
+    border: 1px solid white;
+    border-radius: 8px 0px 0px 8px;
+  }
+  body .top .in-btn button {
+    padding: 0.5rem;
+    border: 1px solid white;
+    border-radius: 0px 8px 8px 0px;
+    width: 10%;
+    background: no-repeat center center hsl(0deg, 0%, 17%) url("/images/icon-arrow.svg");
+  }
+  body .top .in-btn button:hover {
+    background-color: hsl(0deg, 0%, 59%);
+  }
+  body .top .info-box {
+    display: flex;
+    flex-direction: column;
+    margin: 0 1rem;
+    background-color: white;
+    padding: 0.1rem 1.5rem;
+    border: 1px solid white;
+    border-radius: 10px 10px 10px 10px;
+    position: relative;
+    top: 30%;
+    box-shadow: 1px 1px 20px gray;
+    z-index: 3;
+    text-align: center;
+    width: 80%;
+  }
+  body .top .info-box .info {
+    padding: 0 0.2rem;
+    margin: 0.5rem;
+    position: relative;
+  }
+  body .top .info-box .info .info-heading {
+    font-size: 10px;
+    margin: 0.2rem 0rem;
+    color: hsl(0deg, 0%, 59%);
+  }
+  body .top .info-box .info p {
+    font-weight: 900;
+  }
+  body .top .info-box .info .vr {
+    height: 100%;
+    width: 1px;
+    background-color: hsl(0deg, 0%, 59%);
+    position: absolute;
+    top: 0px;
+    right: -4px;
+    display: none;
+  }
+
+  #map {
+    height: 70%;
+    width: 100%;
+    position: relative;
+    z-index: 1;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */
